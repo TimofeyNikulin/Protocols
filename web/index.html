@@ -1,0 +1,210 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8" /> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <title>Шаблонизатор протоколов</title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+    <body>
+        <div class="window">
+            <div class="Committee">
+                <select name="committee" id="committee" onchange="changeCommittee()">
+                    <option value="">...</option>
+                    <option value="BSP">Собрание БСП</option>
+                    <option value="MSP">МСП (совет старост)</option>
+                    <option value="SMI">Комитет СМИ</option>
+                    <option value="Culture">Комитет культуры</option>
+                    <option value="Sport">Комитет спорта</option>
+                    <option value="Order">Комитет безопасности и порядка</option>
+                    <option value="Science">Комитет науки</option>
+                    <option value="Chief">Шефский комитет</option>
+                </select>
+
+                <label for="number" style="font-size: 36px;">№  <input type="number" class="number" name="number" id="number"></label>
+            </div>
+            <div class="Present">
+                <div class="ChapterAndDeputy">
+                    <form action="" class="ChapterAndDeputyForm"> 
+                        <label for="chapter" class="check"><input type="checkbox" name="chapter" id="chapter" style="height: 20px; width: 20px;">  <span id="chapterLabel">Председатель: </span></label>
+                        <label for="deputy" class="check"><input type="checkbox" name="deputy" id="deputy" style="height: 20px; width: 20px;">  <span id="deputyLabel">Зам. Председателя: </span></label>
+                    </form>
+                </div>
+                <div class="Participants">
+                    <div class="tableNotBSP">
+                        <h1>Присутствующие активы классов:</h1>
+                        <table border="1">
+                            <tr>
+                                <th></th>
+                                <th>5А</th>
+                                <th>5Б</th>
+                                <th>5В</th>
+                                <th>5Г</th>
+                                <th>5К</th>
+                                <th>6А</th>
+                                <th>6Б</th>
+                                <th>6В</th>
+                                <th>7А</th>
+                                <th>7Б</th>
+                                <th>7В</th>
+                                <th>7Г</th>
+                                <th>7Д</th>
+                                <th>8А</th>
+                                <th>8Б</th>
+                            </tr>
+                            <tr>
+                                <th>Председатель</th>
+                                <th><input type="checkbox" name="C5A" id="C5A" class="checkClass"></th>
+                                <th><input type="checkbox" name="C5B" id="C5B" class="checkClass"></th>
+                                <th><input type="checkbox" name="C5V" id="C5V" class="checkClass"></th>
+                                <th><input type="checkbox" name="C5G" id="C5G" class="checkClass"></th>
+                                <th><input type="checkbox" name="C5K" id="C5K" class="checkClass"></th>
+                                <th><input type="checkbox" name="C6A" id="C6A" class="checkClass"></th>
+                                <th><input type="checkbox" name="C6B" id="C6B" class="checkClass"></th>
+                                <th><input type="checkbox" name="C6V" id="C6V" class="checkClass"></th>
+                                <th><input type="checkbox" name="C7A" id="C7A" class="checkClass"></th>
+                                <th><input type="checkbox" name="C7B" id="C7B" class="checkClass"></th>
+                                <th><input type="checkbox" name="C7V" id="C7V" class="checkClass"></th>
+                                <th><input type="checkbox" name="C7G" id="C7G" class="checkClass"></th>
+                                <th><input type="checkbox" name="C7D" id="C7D" class="checkClass"></th>
+                                <th><input type="checkbox" name="C8A" id="C8A" class="checkClass"></th>
+                                <th><input type="checkbox" name="C8B" id="C8B" class="checkClass"></th>
+                            </tr>
+                            <tr>
+                                <th>Заместитель</th>
+                                <th><input type="checkbox" name="D5A" id="D5A" class="checkClass"></th>
+                                <th><input type="checkbox" name="D5B" id="D5B" class="checkClass"></th>
+                                <th><input type="checkbox" name="D5V" id="D5V" class="checkClass"></th>
+                                <th><input type="checkbox" name="D5G" id="D5G" class="checkClass"></th>
+                                <th><input type="checkbox" name="D5K" id="D5K" class="checkClass"></th>
+                                <th><input type="checkbox" name="D6A" id="D6A" class="checkClass"></th>
+                                <th><input type="checkbox" name="D6B" id="D6B" class="checkClass"></th>
+                                <th><input type="checkbox" name="D6V" id="D6V" class="checkClass"></th>
+                                <th><input type="checkbox" name="D7A" id="D7A" class="checkClass"></th>
+                                <th><input type="checkbox" name="D7B" id="D7B" class="checkClass"></th>
+                                <th><input type="checkbox" name="D7V" id="D7V" class="checkClass"></th>
+                                <th><input type="checkbox" name="D7G" id="D7G" class="checkClass"></th>
+                                <th><input type="checkbox" name="D7D" id="D7D" class="checkClass"></th>
+                                <th><input type="checkbox" name="D8A" id="D8A" class="checkClass"></th>
+                                <th><input type="checkbox" name="D8B" id="D8B" class="checkClass"></th>
+                            </tr>
+                        </table>
+                        <table border="1">
+                            <tr>
+                                <th></th>
+                                <th>8В</th>
+                                <th>8Г</th>
+                                <th>8П</th>
+                                <th>9А</th>
+                                <th>9Б</th>
+                                <th>9В</th>
+                                <th>9П</th>
+                                <th>10А</th>
+                                <th>10Б</th>
+                                <th>10В</th>
+                                <th>11А</th>
+                                <th>11Б</th>
+                                <th>11В</th>
+                            </tr>
+                            <tr>
+                                <th>Председатель</th>
+                                <th><input type="checkbox" name="C8V" id="C8V" class="checkClass"></th>
+                                <th><input type="checkbox" name="C8G" id="C8G" class="checkClass"></th>
+                                <th><input type="checkbox" name="C8P" id="C8P" class="checkClass"></th>
+                                <th><input type="checkbox" name="C9A" id="C9A" class="checkClass"></th>
+                                <th><input type="checkbox" name="C9B" id="C9B" class="checkClass"></th>
+                                <th><input type="checkbox" name="C9V" id="C9V" class="checkClass"></th>
+                                <th><input type="checkbox" name="C9P" id="C9P" class="checkClass"></th>
+                                <th><input type="checkbox" name="C10A" id="C10A" class="checkClass"></th>
+                                <th><input type="checkbox" name="C10B" id="C10B" class="checkClass"></th>
+                                <th><input type="checkbox" name="C10V" id="C10V" class="checkClass"></th>
+                                <th><input type="checkbox" name="C11A" id="C11A" class="checkClass"></th>
+                                <th><input type="checkbox" name="C11B" id="C11B" class="checkClass"></th>
+                                <th><input type="checkbox" name="C11V" id="C11V" class="checkClass"></th>
+                            </tr>
+                            <tr>
+                                <th>Заместитель</th>
+                                <th><input type="checkbox" name="D8V" id="D8V" class="checkClass"></th>
+                                <th><input type="checkbox" name="D8G" id="D8G" class="checkClass"></th>
+                                <th><input type="checkbox" name="D8P" id="D8P" class="checkClass"></th>
+                                <th><input type="checkbox" name="D9A" id="D9A" class="checkClass"></th>
+                                <th><input type="checkbox" name="D9B" id="D9B" class="checkClass"></th>
+                                <th><input type="checkbox" name="D9V" id="D9V" class="checkClass"></th>
+                                <th><input type="checkbox" name="D9P" id="D9P" class="checkClass"></th>
+                                <th><input type="checkbox" name="D10A" id="D10A" class="checkClass"></th>
+                                <th><input type="checkbox" name="D10B" id="D10B" class="checkClass"></th>
+                                <th><input type="checkbox" name="D10V" id="D10V" class="checkClass"></th>
+                                <th><input type="checkbox" name="D11A" id="D11A" class="checkClass"></th>
+                                <th><input type="checkbox" name="D11B" id="D11B" class="checkClass"></th>
+                                <th><input type="checkbox" name="D11V" id="D11V" class="checkClass"></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="hidden tableBSP">
+                        <h1>Присутствующие комитеты</h1>
+                        <table border="1" style="font-size: 17px;">
+                            <tr>
+                                <th>Комитеты</th>
+                                <th>МСП</th>
+                                <th>Культура</th>
+                                <th>Наука</th>
+                                <th>Спорт</th>
+                                <th>БиП</th>
+                                <th>Шефский</th>
+                                <th>СМИ</th>
+                            </tr>
+                            <tr>
+                                <th>Председатель</th>
+                                <th><input type="checkbox" name="CMSP" id="CMSP" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="CCulture" id="CCulture" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="CScience" id="CScience" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="CSport" id="CSport" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="COrder" id="COrder" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="CChief" id="CChief" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="CSMI" id="CSMI" class="checkClassBSP"></th>
+                            </tr>
+                            <tr>
+                                <th>Заместитель</th>
+                                <th><input type="checkbox" name="DMSP" id="DMSP" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="DCulture" id="DCulture" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="DScience" id="DScience" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="DSport" id="DSport" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="DOrder" id="DOrder" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="DChief" id="DChief" class="checkClassBSP"></th>
+                                <th><input type="checkbox" name="DSMI" id="DSMI" class="checkClassBSP"></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="Information">
+                <div class="information">
+                    <div class="smallText">
+                        <div class="agenda">
+                            <h2>Повестка</h2>
+                            <textarea name="" id="agendaInput" cols="25" rows="4"></textarea>
+                        </div>
+                        <div class="solution">
+                            <h2>Решили</h2>
+                            <textarea name="" id="solutionInput" cols="25" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="discussion">
+                        <h2>Обсуждали</h2>
+                        <textarea name="" id="disc" cols="23" rows="7"></textarea>
+                    </div>
+                </div>
+                <div class="date">
+                    <form action="" class="dateForm">
+                        <input type="date" name="" id="dateInput">
+                    </form>
+                    <button>Собрать протокол</button>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="../eel.js"></script> 
+        <script src="./script.js"></script> 
+    </body> 
+</html>
